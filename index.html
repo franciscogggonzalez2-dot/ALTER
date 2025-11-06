@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mil Aprendizajes Por Página</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+</head>
+<link rel="stylesheet" href="index.css">
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="Imagenes/mapp_logo.jpg" alt="Imagen 1" width="50" height="60"
+                    style="border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.3);">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="Libros.html">Libros</a></li>
+                <li><a href="#Redes">Redes</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="user-selector">
+                <button class="user-btn active" onclick="switchUser('ninos')">Niños</button>
+                <button class="user-btn" onclick="switchUser('docentes')">Docentes</button>
+                <button class="user-btn" onclick="switchUser('padres')">Padres</button>
+                <button class="user-btn" onclick="switchUser('psicologos')">Psicólogos</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Mil Aprendizajes Por Página</h1>
+            <img src="Imagenes/mapp_logo.jpg" alt="Imagen 2" width="70" height="80"
+                style="border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.3);">
+            <p>Puliendo cuerpos, mentes y afectos</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary"
+                    onclick="document.getElementById('ninos-content').scrollIntoView()">Comenzar</button>
+                <button class="btn btn-secondary" onclick="alert('Contacto: +57 3117474982')">Contáctanos</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="ninos-content" class="user-content active">
+        <section class="features">
+            <div class="features-container">
+                <h2>Aprende Jugando</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-icon">🎮</div>
+                        <h3>Juegos Interactivos</h3>
+                        <p>Aprende de forma divertida con nuestros juegos diseñados especialmente para ti.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3>Actividades Creativas</h3>
+                        <p>Desarrolla tu creatividad con actividades de arte, dibujo y manualidades.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⭐</div>
+                        <h3>Desafíos Emocionantes</h3>
+                        <p>Supera desafíos y gana insignias mientras aprendes nuevas habilidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="docentes-content" class="user-content">
+        <section class="features">
+            <div class="features-container">
+                <h2>Recursos para Educadores</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-icon">📖</div>
+                        <h3>Guías Pedagógicas</h3>
+                        <p>Material didáctico completo para implementar en tus clases de forma inmediata.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3>Evaluaciones</h3>
+                        <p>Herramientas para medir el progreso y desempeño de tus estudiantes.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎓</div>
+                        <h3>Capacitaciones</h3>
+                        <p>Participa en jornadas pedagógicas y talleres especializados.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🧩</div>
+                        <h3>Filosofía en el Aula</h3>
+                        <p>Implementa la filosofía desde el kinder de forma natural y efectiva.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="padres-content" class="user-content">
+        <section class="features">
+            <div class="features-container">
+                <h2>Apoyo para Padres</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-icon">💡</div>
+                        <h3>Consejos Prácticos</h3>
+                        <p>Tips y estrategias para apoyar el aprendizaje de tu hijo en casa.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📈</div>
+                        <h3>Seguimiento</h3>
+                        <p>Monitorea el progreso académico y emocional de tu hijo.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤝</div>
+                        <h3>Comunidad</h3>
+                        <p>Conecta con otros padres y comparte experiencias y recomendaciones.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>Detección de Talentos</h3>
+                        <p>Identifica las fortalezas y talentos especiales de tu hijo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="psicologos-content" class="user-content">
+        <section class="features">
+            <div class="features-container">
+                <h2>Herramientas Profesionales</h2>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="card-icon">📋</div>
+                        <h3>Evaluaciones Psicológicas</h3>
+                        <p>Instrumentos validados para evaluación integral del desarrollo infantil.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>Investigación Científica</h3>
+                        <p>Acceso a artículos científicos y estudios sobre educación y psicología.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔬</div>
+                        <h3>Casos de Estudio</h3>
+                        <p>Análisis de casos reales y metodología basada en evidencia.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🤲</div>
+                        <h3>Intervenciones</h3>
+                        <p>Protocolos de intervención para diferentes situaciones educativas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section id="inicio" class="inicio" style="margin-top:18px">
+
+        <div class="card">
+            <div class="grid-3" style="margin-top:12px">
+                <h1>Objetivos</h1>
+                <h2>Una plataforma educativa para fomentar el aprendizaje creativo y divertido en niños, docentes,
+                    padres y
+                    psicologos.
+                </h2>
+                <h2> M.A.P.P. (Mil Aprendizajes por Página) es una metodología educativa llamada “Intelecto y
+                    Movimiento”,
+                    creada
+                    por un grupo de maestros de educación preescolar y primaria con más de 30 años de experiencia. Su
+                    propósito
+                    es mejorar la educación desde los primeros años, uniendo arte, juego, filosofía y ciencia.
+                </h2>
+                <img src="Imagenes/Logo-Filosofia.png" alt="Imagen educativa" width="200" height="200"
+                    style="border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.3);">
+                <section class="cards-container">
+                    <h1>Caracteristicas</h1>
+                    <h2> Sencillez.
+                        De lo simple a lo complejo.
+                        Pocas palabras, muchos saberes.
+                        Del bosquejo a la obra de arte.
+                        Explicaciones someras y aprendizajes profundos.
+                        Se aprende mientrasse juega.
+                        Se hace, se conversa y se aprende mientras se juega.
+                        Talller, laboratorio, consultorio psicológico y confesionario.
+                    </h2>
+                </section>
+    </section>
+    </section>
+    <section class="inicio" style="margin-top:18px">
+
+        <div class="card">
+            <div class="grid-3" style="margin-top:12px">
+                <h1>LOS NIÑOS SON FILÓSOFOS
+                </h1>
+                <img src="Imagenes/Flyer-FDKSMF-1024x576.png" alt="Imagen" width="500" height="320"
+                    style="border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.3);">
+                <section class="filo-container">
+                    <h1></h1>
+                    <h2> Hacer filosofía con los niños es una de las tareas atrasadas que tiene la escuela, desde Eme A
+                        Pe Pe,
+                        hacemos un fraternal llamado a los lideres educativos para que incluyan la filosofía en el
+                        pensum desde
+                        el preescolar. Incluir esta materia es una de las necesidades más apremiantes de nuestro aparato
+                        educativo.
+                    </h2>
+
+                    <section class="container">
+                        <img src="Imagenes/Dormilon-Pregunton.png" alt="Imagen" width="400" height="450"
+                            style="border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.3);">
+                        <h2>Nuestra experiencia pedagógica nos dice que es necesario rescatar cuanto antes la
+                            importancia de la
+                            pregunta en la educación básica primaria. Este componente igual que el diálogo siguen siendo
+                            menos
+                            preciados en el acto educativo, sabiendo que, son los dos mejores métodos para llevar los
+                            niños a
+                            diferentes temas. Desde esta página hacemos un fraternal llamado a dirigentes y pedagogos
+                            para tomen
+                            más en serio los valores instruccionales formativos de la dialógica y la indagación.</h2>
+                    </section>
+
+                    <section class="container">
+
+                        <h1>FILOSOFÍA DESDE EL KINDER SIN MENCIONAR LA PALABRA FILOSOFÍA
+                            <img src="Imagenes/Logo-Filosofia.png" alt="Imagen" width="200" height="200"
+                                style="border-radius:20px;box-shadow:0 10px 0px rgba(0,0,0,0.3);">
+                        </h1>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="chatbot-container">
+        <div class="chatbot-header">
+            <span>Asistente MAPP</span>
+            <button class="chatbot-close" onclick="toggleChatbot()">✕</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">
+                <div class="message-bubble">¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</div>
+            </div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta..."
+                onkeypress="handleChatInput(event)">
+            <button onclick="sendChatMessage()">➤</button>
+        </div>
+    </div>
+
+    <div class="visitor-counter">
+        Visitas: <span id="visitor-count">0</span>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sobre Nosotros</h4>
+                <p>Metodología innovadora para educación integral de calidad.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces Rápidos</h4>
+                <a href="#">Cursos</a>
+                <a href="#">Blog</a>
+                <a href="#">Contacto</a>
+
+
+            </div>
+            <div id="contacto">
+                <div class="footer-section">
+
+                    <h4>Contacto</h4>
+                    <p>+57 3117474982</p>
+                    <p>contactenos@milaprendizajesporpagina.com</p>
+                    <p>Calle 44 #77-64, Bogotá</p>
+
+
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mil Aprendizajes Por Página. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+
+    <script>
+        function switchUser(userType) {
+            const contents = document.querySelectorAll('.user-content');
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(userType + '-content').classList.add('active');
+
+            const buttons = document.querySelectorAll('.user-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chatbot-input');
+            const message = input.value.trim();
+
+            if (message === '') return;
+
+            const messagesDiv = document.getElementById('chatbot-messages');
+
+            const userMsg = document.createElement('div');
+            userMsg.className = 'message user';
+            userMsg.innerHTML = '<div class="message-bubble">' + message + '</div>';
+            messagesDiv.appendChild(userMsg);
+
+            input.value = '';
+
+            setTimeout(() => {
+                const botMsg = document.createElement('div');
+                botMsg.className = 'message bot';
+                const responses = [
+                    'Excelente pregunta. Te puedo ayudar con información sobre cursos, capacitaciones y más.',
+                    'Estoy aquí para asistirte. ¿Hay algo específico que quieras saber?',
+                    'Contáctanos directamente al +57 3117474982 para más detalles.',
+                    'Te gustaría información sobre nuestros programas educativos?'
+                ];
+                const randomResponse = responses[Math.floor(Math.random() * responses.length)];
+                botMsg.innerHTML = '<div class="message-bubble">' + randomResponse + '</div>';
+                messagesDiv.appendChild(botMsg);
+                messagesDiv.scrollTop = messagesDiv.scrollHeight;
+            }, 500);
+        }
+
+        function handleChatInput(event) {
+            if (event.key === 'Enter') {
+                sendChatMessage();
+            }
+        }
+
+        function toggleChatbot() {
+            const chatbot = document.querySelector('.chatbot-container');
+            chatbot.style.display = chatbot.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function updateVisitorCount() {
+            let count = localStorage.getItem('visitorCount') || 0;
+            count = parseInt(count) + 1;
+            localStorage.setItem('visitorCount', count);
+            document.getElementById('visitor-count').textContent = count;
+        }
+
+        updateVisitorCount();
+    </script>
+</body>
+
+</html>
